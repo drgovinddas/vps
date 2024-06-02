@@ -15,7 +15,7 @@ reboot
 
 **VIRTUALRAM CREATION OVER***
 
-************/before installing any GUI panel, --PERMIT ROOT LOGIN/*************
+************/before installing any GUI panel, --PERMIT ROOT LOGIN (may not be required, if new superuser works)*************
 **step 1-***
 sudo nano /etc/ssh/sshd_config 
 (1) If you want to set up “root” ec2 user password, find  “PermitRootLogin” parameter and change its value from “prohibit-password” to “yes“
