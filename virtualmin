@@ -1,3 +1,4 @@
+** THESE STEPS ARE FOR ADDITIONAL VIRTUAL RAM CREATION, NOT COMPULSORY FOR VIRTUALMIN PROPER, BUT RECOMMENDED FOR SMALLER RAM INSTANCES**
 sudo su;
 sudo dd if=/dev/zero of=/swapfile bs=512M count=4;              
 sudo chmod 600 /swapfile;
@@ -12,6 +13,8 @@ nano /etc/fstab
 apt-get update && apt-get upgrade -y;
 reboot
 
+**VIRTUALRAM CREATION OVER***
+
 ************/before installing any GUI panel, --PERMIT ROOT LOGIN/*************
 **step 1-***
 sudo nano /etc/ssh/sshd_config 
@@ -24,3 +27,4 @@ service ssh restart
 apt update && apt -y upgrade && apt -y install curl wget sudo
 wget https://software.virtualmin.com/gpl/scripts/install.sh && sudo /bin/sh install.sh -y
 (prepare any test subdomain as fqdn to be given initially)
+TO GET LIST OF COMMANDS INSIDE, DOWNLOAD https://software.virtualmin.com/gpl/scripts/install.sh AND OPEN IN NOTEPAD
