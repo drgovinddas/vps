@@ -23,7 +23,8 @@ sudo nano /etc/ssh/sshd_config
 service ssh restart 
 **STEP 2-  sudo passwd root 
 
-*******webmin /virtualmin installation************
+*******webmin /virtualmin installation (you can rename instance to fqdn=subdomain like design, to auto-detect it, to avoid entering during unattended script************
+
 apt update && apt -y upgrade && apt -y install curl wget sudo
 wget https://software.virtualmin.com/gpl/scripts/install.sh && sudo /bin/sh install.sh -y
 (prepare any test subdomain as fqdn to be given initially)
