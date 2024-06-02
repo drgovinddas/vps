@@ -6,7 +6,7 @@ sudo mkswap /swapfile;
 sudo swapon /swapfile;
 sudo swapon -s
 
-nano /etc/fstab
+sudo nano /etc/fstab
 //Add new line at the end of the file, ctrl O ctrl x, save the file, and then exit//
 /swapfile swap swap defaults 0 0
 
