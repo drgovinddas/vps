@@ -24,9 +24,3 @@ service ssh restart
 apt update && apt -y upgrade && apt -y install curl wget sudo
 wget https://software.virtualmin.com/gpl/scripts/install.sh && sudo /bin/sh install.sh -y
 (prepare any test subdomain as fqdn to be given initially)
-
-********for moodle installation ************
-apt install php-zip php-soap php-intl -y
-max_input_vars=5k        /etc/php/8.1/fpm/php.ini
-reboot
-****extract moodle folder & point to domain registrar at last****
