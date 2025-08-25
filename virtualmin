@@ -23,6 +23,7 @@ sudo ls -la /root   (ENTER PWD and check if it works, then start virtualmin unde
 
 *******webmin /virtualmin installation (you can rename instance to fqdn=subdomain like design, to auto-detect it, to avoid entering during unattended script************
 
+sudo passwd root
 apt update && apt -y upgrade && apt -y install curl wget sudo   (as root user)
 wget https://software.virtualmin.com/gpl/scripts/install.sh && sudo /bin/sh install.sh -y    (as new user by su - newusername)
 (prepare any test subdomain as fqdn to be given initially)
